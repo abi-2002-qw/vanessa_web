@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="sidebar" id="sidebar">
+        <button id="toggleBtn">☰</button> <nav>
+            <ul id="menuList"></ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="calendar-container">
+            <div class="calendar-header">
+                <button id="prev-month" class="nav-button">&lt;</button>
+                <h2 id="current-month-year"></h2>
+                <button id="next-month" class="nav-button">&gt;</button>
+            </div>
+            <div class="calendar-weekdays">
+                <span>Dom</span>
+                <span>Lun</span>
+                <span>Mar</span>
+                <span>Mié</span>
+                <span>Jue</span>
+                <span>Vie</span>
+                <span>Sáb</span>
+            </div>
+            <div id="calendar-days" class="calendar-days">
+                </div>
+        </div>
+    </div>
+
+    <script src="../code.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

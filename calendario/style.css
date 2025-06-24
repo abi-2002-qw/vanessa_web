@@ -1,0 +1,127 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #eef2f7;
+    color: #333;
+
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.calendar-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4CAF50;
+}
+
+.calendar-header h2 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.nav-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+
+.nav-button:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+    font-size: 0.95em;
+}
+
+.calendar-weekdays span:first-child {
+    color: #f44336;
+}
+
+.calendar-weekdays span:last-child {
+    color: #007bff;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    text-align: center;
+}
+
+.calendar-day {
+    padding: 10px 5px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    font-size: 1.1em;
+    color: #444;
+}
+
+.calendar-day:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-1px);
+}
+
+.calendar-day.empty {
+    background-color: transparent;
+    cursor: default;
+    box-shadow: none;
+}
+
+.calendar-day.empty:hover {
+    background-color: transparent;
+    transform: none;
+}
+
+.calendar-day.current-day {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.calendar-day.current-day:hover {
+    background-color: #45a049;
+}

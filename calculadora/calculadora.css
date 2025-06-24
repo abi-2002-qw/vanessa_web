@@ -1,0 +1,153 @@
+.content {
+    flex-grow: 1;
+    padding: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.calculadora {
+    background-color: rgba(255, 255, 255, 0.267);
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    padding: 20px;
+    width: 400px;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); 
+    border: 1px solid rgba(221, 221, 221, 0.5); 
+}
+
+.screen {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 20px;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+    margin-bottom: 40px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.screen h4,
+.screen h1 {
+    text-align: right;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+
+.screen h1 {
+    font-size: 40px;
+    color: rgba(51, 51, 51, 0.801);
+    font-weight: 900;
+}
+
+.screen h4 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: rgba(51, 51, 51, 0.39);
+}
+
+.btn_numericos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.btn_abajo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.btn_arriba {
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+    gap: 10px;
+}
+
+.btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex: 1; 
+    gap: 10px;
+}
+
+.numeros {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    grid-column: span 3;
+    height: 100%;
+}
+
+.operadores {
+    margin-left: 10px; 
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    width: 100%;
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    transform: scale(0.9);
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(88, 88, 88);
+    background: rgba(255, 255, 255, 0.356); 
+    cursor: pointer;
+    box-shadow: inset 0 0 23px 5px rgba(255, 255, 255, 0.295);
+}
+
+button:hover {
+    transform: scale(1);
+    box-shadow: 0 0 32px -3px #5c99fa8f;
+    transition: all 0.04s ease-in-out;
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 32px -3px #5c99fa8f;
+}
+
+#delete {
+    background-color: #ff6b6bb9;
+}
+
+.igual {
+    background-color: rgba(255, 94, 0, 0.726);
+    grid-row: span 2;
+    height: 100%;
+    width: 100%;
+}
+
+.suma {
+    grid-row: span 2;
+}
+
+.operadore_btn {
+    background-color: rgba(0, 140, 255, 0.342);
+}
+
+.numeros .btn_numericos,
+.numeros .btn_abajo,
+.numeros .btn_arriba {
+}
+
+
+.cero {
+    grid-column: span 2; 
+}

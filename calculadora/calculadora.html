@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+
+<body>
+
+    <div class="sidebar" id="sidebar">
+        <button id="toggleBtn">☰</button> <nav>
+            <ul id="menuList"></ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="calculadora">
+            <div class="screen">
+                <h4 id="title"></h4>
+                <h1 id="screen"></h1>
+            </div>
+            <div class="btns">
+                <div class="numeros">
+                    <button id="clear">AC</button>
+                    <button id="delete">BO</button>
+                    <button onclick="digitos('/')" class="operadore_btn">/</button>
+
+                    <button id="siete" onclick="digitos(7)">7</button>
+                    <button id="ocho" onclick="digitos(8)">8</button>
+                    <button id="nueve" onclick="digitos(9)">9</button>
+
+                    <button id="cuatro" onclick="digitos(4)">4</button>
+                    <button id="cinco" onclick="digitos(5)">5</button>
+                    <button id="seis" onclick="digitos(6)">6</button>
+
+                    <button id="uno" onclick="digitos(1)">1</button>
+                    <button id="dos" onclick="digitos(2)">2</button>
+                    <button id="tres" onclick="digitos(3)">3</button>
+
+                    <button class="cero" onclick="digitos(0)">0</button>
+                    <button id="punto" onclick="digitos('.')">.</button>
+                </div>
+
+                <div class="operadores">
+                    <button onclick="digitos('*')" class="operadore_btn">*</button>
+                    <button onclick="digitos('-')" class="operadore_btn">-</button>
+                    <button onclick="digitos('+')" class="operadore_btn suma">+</button>
+                    <button class="igual" id="result"> = </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../code.js"></script>
+    <script src="./calculadora.js"></script>
+</body>
+
+</html>
