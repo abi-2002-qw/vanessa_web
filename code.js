@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const opcionesMenu = [
-        { nombre: "Inicio", ruta: "../index.html" },
+        { nombre: "Inicio", ruta: "/index.html" },
         { nombre: "Calculadora", ruta: "../calculadora/calculadora.html" },
         { nombre: "Calendario", ruta: "../calendario/calendario.html" },
         { nombre: "Juego", ruta: "../juego/juego.html" },
