@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const opcionesMenu = [
-        { nombre: "Inicio", ruta: "/index.html" },
-        { nombre: "Calculadora", ruta: "/calculadora/calculadora.html" },
-        { nombre: "Calendario", ruta: "/calendario/calendario.html" },
-        { nombre: "Juego", ruta: "/juego/juego.html" },
+        { nombre: "Inicio", ruta: "/vanessa_web/index.html" },
+        { nombre: "Calculadora", ruta: "/vanessa_web/calculadora/calculadora.html" },
+        { nombre: "Calendario", ruta: "/vanessa_web/calendario/calendario.html" },
+        { nombre: "Juego", ruta: "/vanessa_web/juego/juego.html" },
     ];
 
     const sidebar = document.getElementById("sidebar");
